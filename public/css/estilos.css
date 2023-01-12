@@ -1,0 +1,78 @@
+
+*{
+    margin: auto;
+    padding: auto;
+}
+
+header{
+    background-color: yellow;
+}
+
+main{
+    background-color: rgb(212, 211, 211);
+    margin: 0em;
+}
+
+main img{
+    width: 20em;
+    height: 20em;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+h2{
+    text-align: center;
+}
+
+.logoBuscador{
+    display: flex;
+    height: 2em;
+    margin: 0em 1em;
+    align-items: center;
+}
+
+.logo{
+    width: 50%;
+    height: 2em;
+}
+
+.buscador{
+    width: 50%;
+    height: 2em;
+    text-align: center;
+    border-radius: 1em;
+}
+
+.banner{
+    height: 5em;
+    object-fit: cover;
+}
+
+.cuotas{
+    text-align: center;
+    margin: 1em;
+}
+
+.menuSinHamburguesa{
+    display: none;
+}
+
+.contenedorHamburguesa{
+    text-align: center;
+}
+
+.menuHamburguesa{
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    background-color: blue;
+    padding: 0.3em;
+    margin: 1em;
+    border-radius: 15px;
+}
+
+.tarjeta{
+    background-color: white;
+    border: 3px solid red;
+}
