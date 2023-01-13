@@ -1,4 +1,4 @@
-
+/* 
 *{
     margin: auto;
     padding: auto;
@@ -75,4 +75,159 @@ h2{
 .tarjeta{
     background-color: white;
     border: 3px solid red;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+
+:root {
+    /* VARIABLES DE COLORES */
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verde: #39b54a;
+    /*VARIABLE FUENTES*/
+    --roboto: 'Roboto', sans-serif;
+    /*TAMAÑOS TIPOGRAFICOS*/
+    --parrafos: 12px;
+    --titulos: 24px;
+    --precio: 18px;
+    --descuento: 16px;
+    --descripciones:16px;
+}
+
+
+/* MI FORMA*/
+/* img{
+    width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: var(--Amarillo);
+    font-family: var(--roboto);
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #000;
+    list-style-type: none;
+}
+header nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.compra{
+    text-align: center;
+}
+
+header div i{
+    background-color: var(--Azul);
+    color: #ebebeb;
+    width: 20px; 
+    margin: 0 auto;
+    
+}
+
+header div{
+    text-align: center;
+    
+}
+
+header img{
+    width: 200px;
+}
+ */
+/* FORMA DEL PROFESOR */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--roboto);
+}
+
+body{
+    background-color: var(--Gris-claro);
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+    
+}
+header nav ul.listaSuperior{
+    margin-bottom: 15px;
+}
+
+header nav ul li a{
+    font-size: var(--parrafos);
+}
+
+/*HEADER*/
+
+header{
+    background-color: var(--Amarillo);
+    padding-top: 10px;
+    padding: 10px;
+}
+
+header div.logo{
+    width: 130px;
+    margin-left: 25px;
+}
+
+header div.busqueda{
+    margin-left: 25px;
+    width: 170px;
+    margin-bottom: 10px;
+}
+
+header p{
+    font-size: var(--parrafos);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+header div.hamburguesa i{
+    text-align: center;
+    background-color: var(--Celeste);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+header div.hamburguesa {
+    text-align: center;
+
+}
+
+footer{
+    padding: 50px 10px;
+    background-color: #fff;
+}
+
+footer article{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+footer article i{
+    color: var(--Celeste);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer article h4{
+    
+}
+
+footer span{
+    font-size: var(--parrafos);
 }
