@@ -1,82 +1,3 @@
-/* 
-*{
-    margin: auto;
-    padding: auto;
-}
-
-header{
-    background-color: yellow;
-}
-
-main{
-    background-color: rgb(212, 211, 211);
-    margin: 0em;
-}
-
-main img{
-    width: 20em;
-    height: 20em;
-}
-
-.negrita{
-    font-weight: bold;
-}
-
-h2{
-    text-align: center;
-}
-
-.logoBuscador{
-    display: flex;
-    height: 2em;
-    margin: 0em 1em;
-    align-items: center;
-}
-
-.logo{
-    width: 50%;
-    height: 2em;
-}
-
-.buscador{
-    width: 50%;
-    height: 2em;
-    text-align: center;
-    border-radius: 1em;
-}
-
-.banner{
-    height: 5em;
-    object-fit: cover;
-}
-
-.cuotas{
-    text-align: center;
-    margin: 1em;
-}
-
-.menuSinHamburguesa{
-    display: none;
-}
-
-.contenedorHamburguesa{
-    text-align: center;
-}
-
-.menuHamburguesa{
-    color: rgb(255, 255, 255);
-    font-size: 2em;
-    background-color: blue;
-    padding: 0.3em;
-    margin: 1em;
-    border-radius: 15px;
-}
-
-.tarjeta{
-    background-color: white;
-    border: 3px solid red;
-} */
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
 
 
@@ -99,54 +20,11 @@ h2{
 }
 
 
-/* MI FORMA*/
-/* img{
-    width: 100%;
-    height: auto;
-}
-
-body {
-    background-color: var(--Amarillo);
-    font-family: var(--roboto);
-}
-
-header nav ul li a{
-    text-decoration: none;
-    color: #000;
-    list-style-type: none;
-}
-header nav ul{
-    list-style-type: none;
-    padding: 0;
-}
-
-.compra{
-    text-align: center;
-}
-
-header div i{
-    background-color: var(--Azul);
-    color: #ebebeb;
-    width: 20px; 
-    margin: 0 auto;
-    
-}
-
-header div{
-    text-align: center;
-    
-}
-
-header img{
-    width: 200px;
-}
- */
-/* FORMA DEL PROFESOR */
-
 *{
     margin: 0;
     padding: 0;
     font-family: var(--roboto);
+    box-sizing: border-box;
 }
 
 body{
@@ -176,6 +54,8 @@ header{
     background-color: var(--Amarillo);
     padding-top: 10px;
     padding: 10px;
+    width: 100%;
+    
 }
 
 header div.logo{
@@ -187,6 +67,7 @@ header div.busqueda{
     margin-left: 25px;
     width: 170px;
     margin-bottom: 10px;
+    
 }
 
 header p{
@@ -208,6 +89,66 @@ header div.hamburguesa {
 
 }
 
+header nav{
+    display: none;
+}
+
+
+/* MAIN */
+
+main h4{
+    color: var(--Gris-oscuro);
+    font-size: var(--titulos);
+}
+
+main.home__productos img.banner{
+    width: 100%;
+}
+
+main.home__productos section article, 
+main.home__productos section h4{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    
+}
+
+
+main.home__productos section article img{
+    width: 100%;
+    height: auto;
+}
+
+main.home__productos section article div{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    margin-top: -3px;
+    
+}
+
+main.home__productos section article div,
+main.home__productos section article p{
+    background-color: #fff;
+}
+
+main.home__productos section article div i{
+    border: 1px solid #39b54a;
+    padding: 10px;
+    border-radius: 50%;
+    color: #39b54a;
+}
+
+.porcentaje{
+    color: #39b54a;
+    margin-bottom: 20px;
+}
+
+.negrita{
+    color: #666;
+    display: none;
+}
+/* END MAIN */
+
 footer{
     padding: 50px 10px;
     background-color: #fff;
@@ -224,10 +165,28 @@ footer article i{
     margin-bottom: 10px;
 }
 
-footer article h4{
-    
-}
-
 footer span{
     font-size: var(--parrafos);
 }
+
+@media screen and (min-width:361px){
+    .negrita{
+        display: block;
+    }
+    main.home__productos section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    header nav{
+        display: block;
+    }
+    header div.hamburguesa{
+        display: none;
+    }
+}
+@media (min-width:769px){
+    .negrita{
+        display: block;
+    }
+}
+
+
