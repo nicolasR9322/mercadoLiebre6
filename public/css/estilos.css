@@ -218,6 +218,33 @@ footer span{
     font-size: var(--parrafos);
 }
 
+.create-form{
+    padding: 20px 15px;
+}
+
+.control-formulario{
+    margin-bottom: 15px;
+}
+
+.control-formulario label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+.control{
+    width: 100%;
+    padding: 8px;
+}
+
+.boton-formulario{
+    background-color: var(--Verde);
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
 @media screen and (min-width:768px){
     .negrita{
         display: block;
@@ -239,6 +266,7 @@ footer span{
         text-align: center;
         align-self: center;
         margin-bottom: 0;
+        font-size: var(--titulos);
     }
 
     header div.navegacion-responsive div.navegacion{
@@ -267,10 +295,16 @@ footer span{
     header nav ul.listaSuperior,
     header nav ul.listaInferior{
         display: flex;
+        align-items: center;
     }
     header nav ul.listaSuperior li,
     header nav ul.listaInferior li{
         margin: 0 1rem;
+    }
+    header nav ul.listaSuperior{
+        padding: 1rem;
+        margin: 1rem;
+        /* border: 3px solid blue; */
     }
 }
 @media (min-width:1200px){

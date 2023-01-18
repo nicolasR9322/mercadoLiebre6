@@ -11,6 +11,10 @@ app.get("home", (req, res) => {
     return res.sendFile(path.join(__dirname, "/views/home.html"))
 })
 
+app.get("/forms", (req, res) => {
+    return res.sendFile(path.join(__dirname, "/views/forms.html"))
+})
+
 
 app.listen(PORT, () => {
     console.log("Servidor levantado en puerto 3000");
