@@ -55,6 +55,9 @@ header{
     padding-top: 10px;
     padding: 10px;
     width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
 }
 
 header div.navegacion{
@@ -127,15 +130,14 @@ main h4{
     font-size: var(--titulos);
 }
 
+
 main.home__productos img.banner{
     width: 100%;
+    margin-top: 150px;
 }
 
 main section article div{
     position: relative;
-    
-}
-main section article i{
     
 }
 
@@ -180,6 +182,10 @@ main.home__productos section article div i{
     position: absolute;
     right: 20px;
     top: -15px;
+    transition: all 1s;
+}
+main.home__productos section article div i:hover{
+    transform: rotate(-90deg);
 }
 .precio{
     display: inline-block;
@@ -212,6 +218,7 @@ footer article i{
     color: var(--Celeste);
     font-size: 2em;
     margin-bottom: 10px;
+    transition: all 1s;
 }
 
 footer span{
@@ -255,6 +262,7 @@ form{
     border-radius: 10px;
     align-items: center;
     border: 1px solid #000;
+    margin-top: 200px;
 }
 form input,
 form button{
@@ -284,7 +292,14 @@ form button, form button a{
     margin: 1rem auto;
     border-radius: 15px;
     color: #fff;
+    transition: all 1s;
+}
+form button{
     background: #1259c3;
+}
+
+form button:hover, form button a:hover {
+    background-color: #0022AA;
 }
 
 span.error-message{
@@ -297,7 +312,11 @@ span.error-message{
 
 @media screen and (min-width:768px){
     .negrita{
+        opacity: 0;
         display: block;
+    }
+    .negrita:hover{
+        opacity: 1;
     }
     main section{
         display: flex;
@@ -308,9 +327,12 @@ span.error-message{
         width: 90%;
     }
     main.home__productos section article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        
         width: 45%;
-        margin: 1rem;     
+        margin: 1rem; 
+    }
+    main.home__productos section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     header p.compra{
         text-align: center;
@@ -362,6 +384,7 @@ span.error-message{
         flex-wrap: wrap;
         align-items: center;
         justify-content:space-evenly;
+        
     }
     form label, form input{
         width: 100%;
@@ -391,6 +414,14 @@ span.error-message{
     }
     main.home__productos section article{
         width: 22%;           
+    }
+    footer div{
+        display: flex;
+        flex-direction: row;
+    }
+    footer article i:hover{
+        color: var(--Amarillo);
+        transform: scale(1.2);
     }
 }
 
