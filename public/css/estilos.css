@@ -244,6 +244,56 @@ footer span{
     padding: 5px 10px;
     border-radius: 5px;
 }
+/* FORMULARIOS */
+form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 10px;
+    background: var(--Gris-claro);
+    margin: 1rem auto;
+    border-radius: 10px;
+    align-items: center;
+    border: 1px solid #000;
+}
+form input,
+form button{
+    margin: 10px 0;
+    
+}
+
+form input{
+    width: 50%;
+    
+}
+
+form div{
+    width: 70%;
+    margin-bottom: 1rem;
+    align-items: center;
+    max-width: 200px;
+}
+
+form div label,
+form div input{
+    margin-bottom: 0.3rem;
+}
+
+form button, form button a{
+    width: 50%;
+    margin: 1rem auto;
+    border-radius: 15px;
+    color: #fff;
+    background: #1259c3;
+}
+
+span.error-message{
+    color: red;
+    width: 50%;
+    font-size: 10px;
+    display: none;
+}
+/*END FORMULARIOS */
 
 @media screen and (min-width:768px){
     .negrita{
@@ -305,6 +355,34 @@ footer span{
         padding: 1rem;
         margin: 1rem;
         /* border: 3px solid blue; */
+    }
+    form{
+        width: 75%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:space-evenly;
+    }
+    form label, form input{
+        width: 100%;
+    }
+    
+    form div{
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form div input{
+        width: 50%;
+    }
+    form button{
+        width: 100%;
+        padding: 1rem;
+    }
+    span.error-message{
+        width: 100%;
+        display: none;
     }
 }
 @media (min-width:1200px){
